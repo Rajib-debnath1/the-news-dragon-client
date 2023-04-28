@@ -7,7 +7,7 @@ const Cetegory = () => {
     const cetegoryNews = useLoaderData()
     return (
         <div>
-            <h2>This Cetegory News: {cetegoryNews.length}</h2>
+            { id && <h2>This Cetegory News: {cetegoryNews.length}</h2>}
             {
                 cetegoryNews.map(news => <NewsCard
                 key={news._id}
